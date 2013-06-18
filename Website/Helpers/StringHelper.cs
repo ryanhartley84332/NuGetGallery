@@ -13,5 +13,10 @@ namespace NuGetGallery.Helpers
 
             return s.Split(separator, stringSplitOptions);
         }
+
+        public static string Join(string a, string b)
+        {
+            return string.Concat(a, b);
+        }
     }
 }

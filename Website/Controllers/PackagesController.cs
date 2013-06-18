@@ -434,7 +434,8 @@ namespace NuGetGallery
             }
             if (!package.IsOwner(HttpContext.User))
             {
-                return new HttpStatusCodeResult(401, "Unauthorized");
+                //return new HttpStatusCodeResult(401, "Unauthorized");
+                return new HttpStatusCodeResult(503, "Service unavaible");
             }
 
             var model = new ManagePackageOwnersViewModel(package, HttpContext.User);
