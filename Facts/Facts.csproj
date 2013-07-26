@@ -217,6 +217,7 @@
     <Compile Include="TestUtils\TestUtility.cs" />
     <Compile Include="UrlExtensionsFacts.cs" />
     <Compile Include="ViewModels\DisplayPackageViewModelFacts.cs" />
+    <Compile Include="ViewModels\PackageViewModelFacts.cs" />
     <Compile Include="ViewModels\PreviousNextPagerViewModelFacts.cs" />
   </ItemGroup>
   <ItemGroup>
