@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceDefinition name="Website.Azure" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition" schemaVersion="2013-03.2.0">
+  <WebRole name="Website" vmsize="Small">
+    <Sites>
+      <Site name="Web">
+        <Bindings>
+          <Binding name="Endpoint1" endpointName="Endpoint1" />
+        </Bindings>
+      </Site>
+    </Sites>
+    <Endpoints>
+      <InputEndpoint name="Endpoint1" protocol="http" port="80" />
+    </Endpoints>
+    <Imports>
+      <Import moduleName="Diagnostics" />
+      <Import moduleName="RemoteAccess" />
+      <Import moduleName="RemoteForwarder" />
+    </Imports>
+    <ConfigurationSettings>
+      <Setting name="Gallery.AzureStorageConnectionString" />
+      <Setting name="Gallery.RequireSSL" />
+      <Setting name="Gallery.LuceneIndexLocation" />
+      <Setting name="Gallery.Environment" />
+      <Setting name="Gallery.SiteRoot" />
+      <Setting name="Gallery.GalleryOwner" />
+      <Setting name="Gallery.ConfirmEmailAddresses" />
+      <Setting name="Gallery.HasWorker" />
+      <Setting name="Gallery.StorageType" />
+    </ConfigurationSettings>
+  </WebRole>
+</ServiceDefinition>

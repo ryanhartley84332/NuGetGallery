@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="Website.Azure" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="3" osVersion="*" schemaVersion="2013-03.2.0">
+  <Role name="Website">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="ryan" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCEElPVsea1zOZQE0BgKCgv2cwDQYJKoZIhvcNAQEBBQAEggEAS6lA1/0TrL7mSeA7ccVK/vRjJR+KzmloR6Z37Tumrkh3+LtrtwvB2d+wEefzX0jh8G3WV4bkyETjWmIs1GEcFklTrVwPgVLUKfIUe/nu3BZfKgI0W9ffeKCOIh1D4wmflS9sMedWN0pFiD318IvBJx/r//7npaHp5FR+7yO4uHtoMm9ebH4DcHm1SBv20gl+OLpi1QxigiDnaWzY5EwLDreFzKZLCn7vZcGjuC3rqknqwlsCV+DxKprZuWAnylHRV3/Mxn47zxL/u/rT+hlBgI+yFSljG3Oti746yB9wnyqjB1gG7GJ5Afhju7uGrs4vpTu5FIjpGSVhy5Fi5SkPjDAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECDk4+kZuFuiIgBBj3V8m93uYg19VZoLbei2/" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2014-08-01T23:59:59.0000000-06:00" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteForwarder.Enabled" value="true" />
+      <Setting name="Gallery.AzureStorageConnectionString" value="DefaultEndpointsProtocol=https;AccountName=ndt;AccountKey=q/UhkgNhBbA5AWK5X7tMvMBJWww2+kBQu6JvnlJv0pwzIc92KUR7fm7a4hcS+x8jYoHMKNkIQ+eqQayTkPcQag==" />
+      <Setting name="Gallery.RequireSSL" value="false" />
+      <Setting name="Gallery.LuceneIndexLocation" value="AppData" />
+      <Setting name="Gallery.Environment" value="Production" />
+      <Setting name="Gallery.SiteRoot" value="http://ndtnuget.azurewebsites.net/" />
+      <Setting name="Gallery.GalleryOwner" value="no-reply@newdawn.com" />
+      <Setting name="Gallery.ConfirmEmailAddresses" value="false" />
+      <Setting name="Gallery.HasWorker" value="false" />
+      <Setting name="Gallery.StorageType" value="AzureStorage" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="BFB74087A1BDA60AEEAFCE5F468A54A84C38D48B" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+</ServiceConfiguration>
